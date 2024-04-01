@@ -1,0 +1,35 @@
+# Bazel output directories
+/bazel-*
+
+# Bazel build files
+/*.bazelrc
+
+# Bazel generated files
+/bazel-out/
+/bazel-bin/
+
+# Bazel test logs
+/testlogs/
+
+# Bazel workspace status
+/bazel-*-*-stamp
+
+# Bazel cache
+/bazel-cache/
+
+# Bazel coverage reports
+/bazel-coverage/
+
+# Bazel remote cache
+/bazel-remote/
+
+# Bazel sandbox
+/bazel-sandbox/
+
+# Bazel test results
+/bazel-testlogs/
+
+# Bazel workspace file
+/.bazelignore
+/.bazelversion
+/.bazelrc.local
