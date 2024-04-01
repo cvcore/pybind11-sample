@@ -16,6 +16,6 @@ double py_mean(py::array_t<double> v) {
     return mean(std::vector<double>(data, data + v.size()));
 }
 
-PYBIND11_MODULE(test, m) {
+PYBIND11_MODULE(samplelib_pybind, m) {
     m.def("mean", &py_mean, "Calculate the mean of a 1-D array");
 }
