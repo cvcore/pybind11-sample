@@ -7,11 +7,12 @@
 
 namespace py = pybind11;
 
-double py_mean(py:array_t<double> v) {
-    if (v.ndim != 1) {
+double py_mean(py::array_t<double> v) {
+    py::buffer_info buf = v.request();
+    if (buf.ndim != 1) {
         throw std::runtime_error("Input must be 1-D array");
     }
-    double *data = v.request();
+    auto *data = static_cast<double *>(buf.ptr);
     return mean(std::vector<double>(data, data + v.size()));
 }
 
