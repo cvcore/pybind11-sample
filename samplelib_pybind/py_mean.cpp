@@ -3,7 +3,7 @@
 #include <pybind11/pybind11.h>
 #include <pybind11/numpy.h>
 
-#include "mean.h"
+#include "samplelib_cpp/mean.h"
 
 namespace py = pybind11;
 
